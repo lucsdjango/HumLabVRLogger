@@ -2,7 +2,7 @@ Includes scripts to log the following:
 - All gaze and eye related data exposed by [the Varjo SDK](https://developer.varjo.com/docs/unity-xr-sdk/eye-tracking-with-varjo-xr-plugin). 
 - (Optional) 0 or 1 indicating if the current (combined) gaze vector intersects specific objects in the scene.
 - (Optional) 0 or 1 if specific objects in the scene are held (depends on [the XR interaction toolkit](https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@2.5/manual/index.html)) 
-- (Optional) Position and location of specific objects in the scene.
+- (Optional) Position and rotation of specific objects in the scene.
 
 By default, all these fields will be logged at the maximum possible capture rate (for the Varjo VR3 200 fps). Since the update rate of the unity engine is lower some values (all marked as optional above) will be duplicated for the capture frames in-between each update. 
 
