@@ -1,5 +1,5 @@
 Includes scripts to log the following:
-- All gaze and eye related data exposed by [the Varjo SDK](https://developer.varjo.com/docs/unity-xr-sdk/eye-tracking-with-varjo-xr-plugin). 
+- All gaze and eye related data exposed by [the Varjo SDK](https://developer.varjo.com/docs/unity-xr-sdk/getting-started-with-varjo-xr-plugin-for-unity). 
 - (Optional) 0 or 1 indicating if the current (combined) gaze vector intersects specific objects in the scene.
 - (Optional) 0 or 1 if specific objects in the scene are held (depends on [the XR interaction toolkit](https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@2.5/manual/index.html)) 
 - (Optional) Position and rotation of specific objects in the scene.
@@ -9,7 +9,7 @@ By default, all these fields will be logged at the maximum possible capture rate
 Usage:
   - Open Unity project and scene with something to look at.
   - Import dependencies:
-	- [the Varjo SDK](https://developer.varjo.com/docs/unity-xr-sdk/eye-tracking-with-varjo-xr-plugin) and select Varjo as XR provider (Project Settings > XR plugin management).
+	- [the Varjo SDK](https://developer.varjo.com/docs/unity-xr-sdk/getting-started-with-varjo-xr-plugin-for-unity) and select Varjo as XR provider (Project Settings > XR plugin management).
 	- [The XR interaction toolkit](https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@2.5/manual/installation.html)
   - If necessary (not already done), convert main camera in scene to XR rig (right click camera > XR)
   - Download and import the [HumLabVRLogger Unity package](https://github.com/lucsdjango/HumLabVRLogger/blob/main/HumLabVRLogger.unitypackage)
