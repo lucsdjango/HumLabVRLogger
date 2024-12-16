@@ -12,7 +12,7 @@ Usage:
   - Import dependencies:
 	- [the Varjo SDK](https://developer.varjo.com/docs/unity-xr-sdk/getting-started-with-varjo-xr-plugin-for-unity) and select Varjo as XR provider (Project Settings > XR plugin management).
   		- Update to the latest version to match the latest firmware on the device (check in Varjo Base under the Support tab)
-       		- Follow the steps up to and including converting the main camera in the unity scene to an XR rig. 	
+  		- Follow the steps up to and including converting the main camera in the unity scene to an XR rig. 	
 	- [The XR interaction toolkit](https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@3.0/manual/installation.html)
   - If necessary (not already done), convert main camera in scene to XR rig (right click camera > XR)
   - Download and import the [HumLabVRLogger Unity package](https://github.com/lucsdjango/HumLabVRLogger/blob/main/HumLabVRLogger.unitypackage)
