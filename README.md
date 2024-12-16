@@ -8,10 +8,11 @@ By default, all these fields will be logged at the maximum possible capture rate
 
 Usage:
   - Open Unity project and scene with something to look at.
-  - 	If you start a new project, install the XR plugin management  by Project Settings > XR plugin management (the bottom item)
+  	- If you start a new project, install the XR plugin management  by Project Settings > XR plugin management (the bottom item)
   - Import dependencies:
 	- [the Varjo SDK](https://developer.varjo.com/docs/unity-xr-sdk/getting-started-with-varjo-xr-plugin-for-unity) and select Varjo as XR provider (Project Settings > XR plugin management).
-  		- Update to the latest version to match the latest firmware on the device (check in Varjo Base under the Support tab) 
+  		- Update to the latest version to match the latest firmware on the device (check in Varjo Base under the Support tab)
+    		- Follow the steps up to and including converting the main camera in the unity scene to an XR rig. 	
 	- [The XR interaction toolkit](https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@3.0/manual/installation.html)
   - If necessary (not already done), convert main camera in scene to XR rig (right click camera > XR)
   - Download and import the [HumLabVRLogger Unity package](https://github.com/lucsdjango/HumLabVRLogger/blob/main/HumLabVRLogger.unitypackage)
