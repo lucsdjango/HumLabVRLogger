@@ -18,7 +18,10 @@ Usage:
   - Download and import the [HumLabVRLogger Unity package](https://github.com/lucsdjango/HumLabVRLogger/blob/main/HumLabVRLogger.unitypackage)
   - Add the ETLogger PreFab to the scene
   - Specify the camera representing the (center) in the "XR camera" field in the ETLogger component (inspector window when ETLogger object is selected).
-  - Add Component "GazeGrabLoggedObject" to any object with a collider, and logs will indicate whether it is looked at or held at each update frame. (As long as an object with an enabled ETLogger component is present in the scene and activated.)
+  - Add Component "GazeGrabLoggedObject" to any object with a collider component.
+  - Run scene in editor or via Build and Run.
+  	- Make sure eyetracking is wnabled and calibrated on the Varjo device.
+  - Logs will indicate whether it is looked at or held at each update frame. (As long as an object with an enabled ETLogger component is present in the scene and activated.)
   - Logs will be saved 
 	- as text files with tab separated values
 	- named by a specified prefix and the current time and date
