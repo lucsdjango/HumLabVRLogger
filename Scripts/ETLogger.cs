@@ -81,7 +81,7 @@ public class ETLogger : MonoBehaviour
 
 
         // For testing: logging is started by calling StartLogging()
-        // Invoke("StartLogging", 2.0f);
+         Invoke("StartLogging", 2.0f);
 
 
     }
@@ -97,7 +97,7 @@ public class ETLogger : MonoBehaviour
     {
 
         fixationPointTransform.GetComponent<Renderer>().enabled = showFixationPoint;
-        closestHitTransform.GetComponent<Renderer>().enabled = showFixationPoint;
+        closestHitTransform.GetComponent<Renderer>().enabled = showClosestHitPoint;
 
         // Request gaze calibration
         if (Input.GetKeyDown(calibrationRequestKey))
@@ -153,9 +153,9 @@ public class ETLogger : MonoBehaviour
                 // Fixation point can be calculated using ray origin, direction and focus distance
                 fixationPointTransform.position = rayOrigin + direction * gazeData.focusDistance;
 
-                distance = 5f;
+                distance = floatingGazeTargetDistance;
                 GazeGrabLoggedObject hitObject;
-                RaycastHit[] hits = Physics.RaycastAll(rayOrigin, direction, 100f);
+                RaycastHit[] hits = Physics.RaycastAll(rayOrigin, direction, floatingGazeTargetDistance);
 
 
 
